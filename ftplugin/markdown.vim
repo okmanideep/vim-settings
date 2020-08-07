@@ -12,7 +12,7 @@ setlocal colorcolumn=0
 setlocal nonu
 setlocal nornu
 
-let b:undo_ftplugin .= "| setlocal conceallevel<"
+let b:undo_ftplugin = "| setlocal conceallevel<"
 let b:undo_ftplugin .= "| setlocal colorcolumn<"
 let b:undo_ftplugin .= "| setlocal nonu<"
 let b:undo_ftplugin .= "| setlocal nornu<"
