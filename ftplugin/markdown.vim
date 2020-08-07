@@ -13,7 +13,7 @@ setlocal nonu
 setlocal nornu
 
 let b:undo_ftplugin .= "| setlocal conceallevel<"
-            \."| setlocal colorcolumn<"
-            \."| setlocal nonu<"
-            \."| setlocal nornu<"
-            \."| silent! call lightline#enable()"
+let b:undo_ftplugin .= "| setlocal colorcolumn<"
+let b:undo_ftplugin .= "| setlocal nonu<"
+let b:undo_ftplugin .= "| setlocal nornu<"
+let b:undo_ftplugin .= "| silent! call lightline#enable()"
