@@ -9,7 +9,7 @@ setlocal colorcolumn=0
 setlocal nonu
 setlocal nornu
 
-if b:undo_ftplugin
+if exists("b:undo_ftplugin")
     let b:undo_ftplugin .= "| setlocal conceallevel<"
 elseif
     let b:undo_ftplugin = "setlocal conceallevel<"
