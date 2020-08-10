@@ -11,7 +11,7 @@ setlocal nornu
 
 if exists("b:undo_ftplugin")
     let b:undo_ftplugin .= "| setlocal conceallevel<"
-elseif
+else
     let b:undo_ftplugin = "setlocal conceallevel<"
 endif
 
