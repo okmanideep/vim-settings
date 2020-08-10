@@ -10,11 +10,11 @@ setlocal nonu
 setlocal nornu
 
 if b:undo_ftplugin
+    let b:undo_ftplugin .= "| setlocal conceallevel<"
 elseif
-    let b:undo_ftplugin = ""
+    let b:undo_ftplugin = "setlocal conceallevel<"
 endif
 
-let b:undo_ftplugin .= "| setlocal conceallevel<"
 let b:undo_ftplugin .= "| setlocal colorcolumn<"
 let b:undo_ftplugin .= "| setlocal nonu<"
 let b:undo_ftplugin .= "| setlocal nornu<"
